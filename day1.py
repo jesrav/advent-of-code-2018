@@ -2,8 +2,8 @@ from typing import List, Iterator
 from utils import load_data
 
 # Get puzzle data
-frequency_change_data: List[str] = load_data('input_day1.txt')
-
+frequency_change_data = load_data('input_day1.txt')
+frequency_change_data = [int(freq_change) for freq_change in frequency_change_data]
 
 def generate_frequencies(frequency_changes: List, start: int = 0) -> Iterator[int]:
     frequency = start
